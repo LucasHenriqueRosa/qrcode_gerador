@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'poppins';
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    color: aliceblue;
+    height: 600px;
+}
+form{
+    height: 30rem;
+    width: 20rem;
+    background-color: rgb(255, 255, 255);
+    color:black ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heading{
+    text-align: center;
+    background: rgb(98, 0, 255);
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    width: 100%;
+}
+#website{
+    width: 80%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: gainsboro;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+input{
+    font-family: 'poppins';
+    transition: 0.3s;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.generateBtn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    margin: 20px;    
+    background: linear-gradient(to right, var(--cores-dancantes));
+    animation: coresDancantes 2s linear infinite;
+
+}
+:root {
+    --cor-background: #212123;
+    --cor-reflexo: rgba(255, 255, 255, 0.4);
+    --cores-dancantes: rgb(76, 217, 105), rgb(52, 170, 220), rgb(88, 86, 217),
+        rgb(255, 45, 83);}
+
+@keyframes coresDancantes {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
